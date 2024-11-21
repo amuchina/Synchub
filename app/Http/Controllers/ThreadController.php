@@ -1,6 +1,6 @@
 <?php
 
-namespace app\Http\Controllers;
+namespace App\Http\Controllers;
 
 use App\Models\Thread;
 use Illuminate\Http\Request;
@@ -14,5 +14,9 @@ class ThreadController extends Controller{
         return Inertia::render('Threads/All', [
             'threads' => $threads
         ]);
+    }
+
+    public function create(){
+
     }
 }
